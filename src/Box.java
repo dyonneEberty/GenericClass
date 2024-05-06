@@ -9,6 +9,7 @@ public class Box<T> {
         this.content = content;
     }
 
+    // logic to determine and distribute content according to the defined type
     public <T> T addContentsToTheBox(T value) {
         if (this.content instanceof Integer c && value instanceof Integer i) {
             Integer result = c + i;
